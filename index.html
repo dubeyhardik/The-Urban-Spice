@@ -1,0 +1,3417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Urban Spice | Every Bite Tells a Story — Multi-Cuisine Restaurant in Adajan, Surat</title>
+  <meta name="description" content="The Urban Spice in Adajan, Surat offers a delightful dining experience with authentic Indian flavours, street food, and modern multi-cuisine dishes. Established in 2019.">
+  <meta name="keywords" content="Restaurant in Adajan Surat, Best restaurant in Surat, Multi-cuisine restaurant in Surat, Vegetarian food in Adajan, The Urban Spice Surat">
+  <meta name="author" content="Team Havy">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="The Urban Spice — Every Bite Tells a Story">
+  <meta property="og:description" content="Discover exceptional taste, authentic ingredients, and unforgettable multi-cuisine dining experiences at The Urban Spice in Adajan, Surat.">
+  <meta property="og:type" content="restaurant">
+  <meta property="og:url" content="https://theurbanspice.example.com">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80">
+  <meta property="og:locale" content="en_IN">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "The Urban Spice",
+    "slogan": "Every Bite Tells a Story",
+    "description": "The Urban Spice offers a delightful dining experience with authentic Indian flavours, delicious street food and modern cuisine.",
+    "foundingDate": "2019",
+    "servesCuisine": ["Indian", "Chinese", "South Indian", "Street Food", "Multi-Cuisine"],
+    "priceRange": "₹₹",
+    "telephone": "+91-98241-60664",
+    "email": "havytechnologies@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 12, Green Avenue, Adajan",
+      "addressLocality": "Surat",
+      "addressRegion": "Gujarat",
+      "addressCountry": "IN"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "11:00",
+        "closes": "23:00"
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --dark-brown: #241610;
+      --gold: #C9A45C;
+      --gold-light: #dfc082;
+      --gold-dark: #a8843e;
+      --cream: #F8F3EA;
+      --cream-dark: #ede4d3;
+      --charcoal: #25211E;
+      --text-muted: #bfb6aa;
+      --text-dark-muted: #5e554e;
+      --whatsapp-green: #25D366;
+      --whatsapp-dark: #1da851;
+      --font-heading: 'Playfair Display', Georgia, serif;
+      --font-body: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+      --transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+      --shadow-soft: 0 12px 32px rgba(20, 12, 8, 0.12);
+      --shadow-dark: 0 16px 40px rgba(0, 0, 0, 0.45);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+      background-color: var(--dark-brown);
+      color: var(--cream);
+      font-family: var(--font-body);
+    }
+
+    body {
+      overflow-x: hidden;
+      line-height: 1.65;
+      background-color: var(--dark-brown);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: var(--transition);
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    button, input, select, textarea {
+      font-family: var(--font-body);
+    }
+
+    button {
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+
+    /* Typography & Layout Utilities */
+    .container {
+      width: 100%;
+      max-width: 1260px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .section-padding {
+      padding: 6rem 0;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 4rem;
+    }
+
+    .section-subtitle {
+      display: inline-block;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 3.5px;
+      color: var(--gold);
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      position: relative;
+      padding: 0 2.2rem;
+    }
+
+    .section-subtitle::before,
+    .section-subtitle::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 1.5rem;
+      height: 1px;
+      background-color: var(--gold);
+    }
+
+    .section-subtitle::before { left: 0; }
+    .section-subtitle::after { right: 0; }
+
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 600;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+
+    .section-desc {
+      font-size: 0.98rem;
+      opacity: 0.85;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.55rem;
+      padding: 0.95rem 1.8rem;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      border-radius: 2px;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn-primary {
+      background-color: var(--gold);
+      color: var(--dark-brown);
+      border: 1px solid var(--gold);
+      font-weight: 600;
+    }
+
+    .btn-primary:hover {
+      background-color: var(--gold-light);
+      border-color: var(--gold-light);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(201, 164, 92, 0.35);
+    }
+
+    .btn-outline {
+      background-color: transparent;
+      color: var(--cream);
+      border: 1px solid var(--gold);
+    }
+
+    .btn-outline:hover {
+      background-color: var(--gold);
+      color: var(--dark-brown);
+      transform: translateY(-2px);
+    }
+
+    .btn-sm {
+      padding: 0.6rem 1.05rem;
+      font-size: 0.76rem;
+      letter-spacing: 0.8px;
+    }
+
+    /* Scroll Reveal Animations */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.75s ease-out, transform 0.75s ease-out;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* 1. STICKY NAVIGATION */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      padding: 1.3rem 0;
+      transition: var(--transition);
+      background: linear-gradient(to bottom, rgba(36, 22, 16, 0.92), rgba(36, 22, 16, 0));
+    }
+
+    .navbar.scrolled {
+      background-color: rgba(36, 22, 16, 0.98);
+      backdrop-filter: blur(10px);
+      padding: 0.85rem 0;
+      border-bottom: 1px solid rgba(201, 164, 92, 0.25);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .brand-logo {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-name {
+      font-family: var(--font-heading);
+      font-size: 1.55rem;
+      font-weight: 700;
+      color: var(--gold);
+      letter-spacing: 1.5px;
+      line-height: 1.1;
+    }
+
+    .brand-tagline {
+      font-size: 0.62rem;
+      letter-spacing: 2.2px;
+      text-transform: uppercase;
+      color: var(--cream);
+      opacity: 0.85;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.45rem;
+    }
+
+    .nav-links a {
+      font-size: 0.82rem;
+      font-weight: 400;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: var(--cream);
+      position: relative;
+      padding: 0.3rem 0;
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 1.5px;
+      background-color: var(--gold);
+      transition: var(--transition);
+    }
+
+    .nav-links a:hover {
+      color: var(--gold);
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+    }
+
+    .cart-trigger-btn {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.55rem 0.95rem;
+      border: 1px solid var(--gold);
+      color: var(--cream);
+      background-color: rgba(201, 164, 92, 0.12);
+      font-size: 0.8rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      border-radius: 2px;
+      transition: var(--transition);
+    }
+
+    .cart-trigger-btn:hover {
+      background-color: var(--gold);
+      color: var(--dark-brown);
+    }
+
+    .cart-badge {
+      background-color: var(--gold);
+      color: var(--dark-brown);
+      font-weight: 700;
+      font-size: 0.72rem;
+      min-width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 5px;
+      transition: var(--transition);
+    }
+
+    .cart-trigger-btn:hover .cart-badge {
+      background-color: var(--dark-brown);
+      color: var(--gold);
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 28px;
+      height: 20px;
+      z-index: 1002;
+    }
+
+    .hamburger span {
+      display: block;
+      height: 2px;
+      width: 100%;
+      background-color: var(--gold);
+      transition: var(--transition);
+    }
+
+    .hamburger.active span:nth-child(1) {
+      transform: translateY(9px) rotate(45deg);
+    }
+    .hamburger.active span:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburger.active span:nth-child(3) {
+      transform: translateY(-9px) rotate(-45deg);
+    }
+
+    /* 2. HERO SECTION */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 7.5rem 1.5rem 4rem;
+      background-image: linear-gradient(
+          rgba(36, 22, 16, 0.72),
+          rgba(36, 22, 16, 0.88)
+        ),
+        url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1920&q=85');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      border-bottom: 1px solid rgba(201, 164, 92, 0.25);
+    }
+
+    .hero-content {
+      max-width: 860px;
+      z-index: 2;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      border: 1px solid rgba(201, 164, 92, 0.45);
+      background-color: rgba(36, 22, 16, 0.65);
+      padding: 0.45rem 1.2rem;
+      font-size: 0.76rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: var(--gold);
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-title {
+      font-family: var(--font-heading);
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      font-weight: 700;
+      line-height: 1.15;
+      color: var(--cream);
+      margin-bottom: 1.4rem;
+    }
+
+    .hero-title span {
+      color: var(--gold);
+      font-style: italic;
+      font-weight: 500;
+    }
+
+    .hero-description {
+      font-size: clamp(1rem, 2vw, 1.18rem);
+      color: var(--cream-dark);
+      max-width: 640px;
+      margin: 0 auto 2.5rem;
+      font-weight: 300;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.1rem;
+    }
+
+    .hero-meta {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(201, 164, 92, 0.2);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2.5rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .hero-meta-item strong {
+      color: var(--gold);
+      display: block;
+      font-family: var(--font-heading);
+      font-size: 1.05rem;
+      letter-spacing: 0.5px;
+    }
+
+    /* 3. ABOUT US */
+    .about-section {
+      background-color: var(--cream);
+      color: var(--charcoal);
+      position: relative;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .about-image-wrapper {
+      position: relative;
+      padding: 1.2rem;
+    }
+
+    .about-image-wrapper::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 75%;
+      height: 85%;
+      border: 2px solid var(--gold);
+      z-index: 0;
+    }
+
+    .about-image {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .established-badge {
+      position: absolute;
+      bottom: -0.5rem;
+      right: -0.5rem;
+      z-index: 2;
+      background-color: var(--dark-brown);
+      color: var(--cream);
+      padding: 1.5rem 2rem;
+      border: 1px solid var(--gold);
+      text-align: center;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .established-badge .year {
+      font-family: var(--font-heading);
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1;
+    }
+
+    .established-badge .label {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      display: block;
+      margin-top: 0.3rem;
+    }
+
+    .about-content .section-subtitle {
+      padding-left: 0;
+      color: var(--gold-dark);
+    }
+    .about-content .section-subtitle::before {
+      display: none;
+    }
+
+    .about-content .section-title {
+      color: var(--dark-brown);
+      margin-bottom: 1.25rem;
+    }
+
+    .about-story {
+      font-size: 1.02rem;
+      color: var(--text-dark-muted);
+      margin-bottom: 1.5rem;
+    }
+
+    .about-tagline-quote {
+      font-family: var(--font-heading);
+      font-style: italic;
+      font-size: 1.25rem;
+      color: var(--dark-brown);
+      border-left: 3px solid var(--gold);
+      padding-left: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .about-features {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem;
+      margin-bottom: 2.2rem;
+    }
+
+    .about-feature-item {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      background-color: #fff;
+      padding: 0.9rem 1.1rem;
+      border: 1px solid rgba(201, 164, 92, 0.3);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    }
+
+    .about-feature-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background-color: rgba(201, 164, 92, 0.18);
+      color: var(--dark-brown);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .about-feature-title {
+      font-weight: 600;
+      font-size: 0.92rem;
+      color: var(--dark-brown);
+    }
+
+    /* 4. SPECIAL HIGHLIGHTS */
+    .highlights-section {
+      background-color: var(--charcoal);
+      border-top: 1px solid rgba(201, 164, 92, 0.15);
+      border-bottom: 1px solid rgba(201, 164, 92, 0.15);
+    }
+
+    .highlights-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.8rem;
+    }
+
+    .highlight-card {
+      background-color: var(--dark-brown);
+      border: 1px solid rgba(201, 164, 92, 0.22);
+      padding: 2.4rem 1.75rem;
+      text-align: center;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .highlight-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--gold);
+      box-shadow: var(--shadow-dark);
+    }
+
+    .highlight-icon {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 1.4rem;
+      border: 1px solid var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold);
+      transition: var(--transition);
+    }
+
+    .highlight-card:hover .highlight-icon {
+      background-color: var(--gold);
+      color: var(--dark-brown);
+    }
+
+    .highlight-title {
+      font-family: var(--font-heading);
+      font-size: 1.3rem;
+      color: var(--cream);
+      margin-bottom: 0.75rem;
+    }
+
+    .highlight-text {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    /* 5. FOOD MENU */
+    .menu-section {
+      background-color: var(--dark-brown);
+    }
+
+    .menu-filters {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.65rem;
+      margin-bottom: 3rem;
+    }
+
+    .filter-btn {
+      padding: 0.6rem 1.35rem;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--cream);
+      border: 1px solid rgba(201, 164, 92, 0.35);
+      background-color: rgba(37, 33, 30, 0.6);
+      transition: var(--transition);
+      border-radius: 2px;
+    }
+
+    .filter-btn:hover,
+    .filter-btn.active {
+      background-color: var(--gold);
+      color: var(--dark-brown);
+      border-color: var(--gold);
+      font-weight: 600;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 2rem;
+    }
+
+    .menu-card {
+      background-color: var(--charcoal);
+      border: 1px solid rgba(201, 164, 92, 0.2);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      transition: var(--transition);
+    }
+
+    .menu-card.hidden {
+      display: none;
+    }
+
+    .menu-card:hover {
+      border-color: var(--gold);
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-dark);
+    }
+
+    .menu-img-wrap {
+      position: relative;
+      height: 230px;
+      overflow: hidden;
+    }
+
+    .menu-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .menu-card:hover .menu-img-wrap img {
+      transform: scale(1.07);
+    }
+
+    .menu-category-tag {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      background-color: rgba(36, 22, 16, 0.9);
+      color: var(--gold);
+      border: 1px solid rgba(201, 164, 92, 0.45);
+      padding: 0.28rem 0.75rem;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    .menu-body {
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .menu-header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      margin-bottom: 0.6rem;
+      border-bottom: 1px dashed rgba(201, 164, 92, 0.25);
+      padding-bottom: 0.65rem;
+    }
+
+    .menu-item-name {
+      font-family: var(--font-heading);
+      font-size: 1.3rem;
+      color: var(--cream);
+      font-weight: 600;
+    }
+
+    .menu-item-price {
+      font-family: var(--font-heading);
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--gold);
+      white-space: nowrap;
+    }
+
+    .menu-item-desc {
+      font-size: 0.87rem;
+      color: var(--text-muted);
+      margin-bottom: 1.4rem;
+      flex-grow: 1;
+    }
+
+    .card-action-group {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.65rem;
+    }
+
+    /* 6. BESTSELLERS */
+    .bestsellers-section {
+      background-color: var(--cream);
+      color: var(--charcoal);
+    }
+
+    .bestsellers-section .section-subtitle {
+      color: var(--gold-dark);
+    }
+
+    .bestsellers-section .section-title {
+      color: var(--dark-brown);
+    }
+
+    .bestsellers-section .section-desc {
+      color: var(--text-dark-muted);
+    }
+
+    .bestsellers-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.75rem;
+    }
+
+    .bestseller-card {
+      background-color: var(--dark-brown);
+      color: var(--cream);
+      border: 1px solid var(--gold);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: var(--transition);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .bestseller-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 18px 40px rgba(36, 22, 16, 0.28);
+    }
+
+    .bestseller-img-wrap {
+      position: relative;
+      height: 210px;
+      overflow: hidden;
+    }
+
+    .bestseller-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .bestseller-card:hover .bestseller-img-wrap img {
+      transform: scale(1.08);
+    }
+
+    .signature-ribbon {
+      position: absolute;
+      top: 0.85rem;
+      right: 0.85rem;
+      background-color: var(--gold);
+      color: var(--dark-brown);
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      padding: 0.3rem 0.7rem;
+    }
+
+    .bestseller-content {
+      padding: 1.35rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .bestseller-title {
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      color: var(--cream);
+      margin-bottom: 0.35rem;
+    }
+
+    .bestseller-price {
+      font-family: var(--font-heading);
+      font-size: 1.2rem;
+      color: var(--gold);
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+
+    .bestseller-desc {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      margin-bottom: 1.25rem;
+      flex-grow: 1;
+    }
+
+    /* 7. RESTAURANT GALLERY */
+    .gallery-section {
+      background-color: var(--charcoal);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .gallery-item {
+      position: relative;
+      height: 290px;
+      overflow: hidden;
+      border: 1px solid rgba(201, 164, 92, 0.3);
+      cursor: pointer;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .gallery-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(36, 22, 16, 0.92), rgba(36, 22, 16, 0.25));
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 1.5rem;
+      opacity: 0;
+      transition: var(--transition);
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.08);
+    }
+
+    .gallery-item:hover .gallery-overlay {
+      opacity: 1;
+    }
+
+    .gallery-caption-tag {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--gold);
+      margin-bottom: 0.2rem;
+    }
+
+    .gallery-caption-title {
+      font-family: var(--font-heading);
+      font-size: 1.2rem;
+      color: var(--cream);
+    }
+
+    /* Lightbox Modal */
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      background-color: rgba(15, 9, 6, 0.95);
+      z-index: 2200;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+
+    .lightbox.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .lightbox-inner {
+      max-width: 960px;
+      width: 100%;
+      position: relative;
+      text-align: center;
+    }
+
+    .lightbox-img {
+      width: 100%;
+      max-height: 78vh;
+      object-fit: contain;
+      border: 1px solid var(--gold);
+    }
+
+    .lightbox-caption {
+      margin-top: 1rem;
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      color: var(--cream);
+    }
+
+    .lightbox-close,
+    .lightbox-prev,
+    .lightbox-next {
+      position: absolute;
+      background-color: rgba(36, 22, 16, 0.85);
+      color: var(--gold);
+      border: 1px solid var(--gold);
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      transition: var(--transition);
+    }
+
+    .lightbox-close:hover,
+    .lightbox-prev:hover,
+    .lightbox-next:hover {
+      background-color: var(--gold);
+      color: var(--dark-brown);
+    }
+
+    .lightbox-close {
+      top: -54px;
+      right: 0;
+    }
+
+    .lightbox-prev {
+      top: 50%;
+      left: 1rem;
+      transform: translateY(-50%);
+    }
+
+    .lightbox-next {
+      top: 50%;
+      right: 1rem;
+      transform: translateY(-50%);
+    }
+
+    /* 8. TESTIMONIALS (SAMPLE / DEMO) */
+    .testimonials-section {
+      background-color: var(--dark-brown);
+      border-top: 1px solid rgba(201, 164, 92, 0.2);
+    }
+
+    .sample-disclaimer-banner {
+      display: inline-block;
+      background-color: rgba(201, 164, 92, 0.12);
+      border: 1px solid rgba(201, 164, 92, 0.45);
+      color: var(--gold);
+      font-size: 0.76rem;
+      padding: 0.4rem 1rem;
+      margin-top: 0.85rem;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    .testimonial-card {
+      background-color: var(--charcoal);
+      border: 1px solid rgba(201, 164, 92, 0.25);
+      padding: 2.2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    .sample-badge {
+      display: inline-block;
+      align-self: flex-start;
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      padding: 0.25rem 0.65rem;
+      background-color: rgba(201, 164, 92, 0.18);
+      color: var(--gold);
+      border: 1px solid rgba(201, 164, 92, 0.4);
+      margin-bottom: 1.2rem;
+    }
+
+    .testimonial-quote {
+      font-size: 0.94rem;
+      font-style: italic;
+      color: var(--cream-dark);
+      margin-bottom: 1.6rem;
+      line-height: 1.75;
+    }
+
+    .testimonial-author {
+      border-top: 1px solid rgba(201, 164, 92, 0.18);
+      padding-top: 1rem;
+    }
+
+    .author-name {
+      font-family: var(--font-heading);
+      font-size: 1.1rem;
+      color: var(--gold);
+    }
+
+    .author-context {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    /* 9. CONTACT, LOCATION & TABLE RESERVATION */
+    .contact-section {
+      background-color: var(--cream);
+      color: var(--charcoal);
+    }
+
+    .contact-section .section-subtitle {
+      color: var(--gold-dark);
+    }
+
+    .contact-section .section-title {
+      color: var(--dark-brown);
+    }
+
+    /* Luxury Table Reservation Form Box */
+    .reservation-wrapper {
+      background-color: var(--dark-brown);
+      color: var(--cream);
+      border: 1px solid var(--gold);
+      padding: 3rem;
+      margin-bottom: 3.5rem;
+      box-shadow: var(--shadow-soft);
+      position: relative;
+    }
+
+    .reservation-header {
+      text-align: center;
+      max-width: 620px;
+      margin: 0 auto 2.2rem;
+    }
+
+    .reservation-header h3 {
+      font-family: var(--font-heading);
+      font-size: clamp(1.65rem, 3vw, 2.25rem);
+      color: var(--gold);
+      margin-bottom: 0.4rem;
+    }
+
+    .reservation-header p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .reservation-form-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+    }
+
+    .form-group.full-width {
+      grid-column: 1 / -1;
+    }
+
+    .form-label {
+      font-size: 0.76rem;
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+      color: var(--gold);
+      font-weight: 500;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 0.85rem 1rem;
+      background-color: var(--charcoal);
+      border: 1px solid rgba(201, 164, 92, 0.35);
+      color: var(--cream);
+      font-size: 0.92rem;
+      border-radius: 2px;
+      transition: var(--transition);
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--gold);
+      box-shadow: 0 0 0 2px rgba(201, 164, 92, 0.2);
+    }
+
+    .form-control::placeholder {
+      color: rgba(191, 182, 170, 0.6);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 3rem;
+      align-items: stretch;
+    }
+
+    .contact-info-panel {
+      background-color: var(--dark-brown);
+      color: var(--cream);
+      padding: 3rem;
+      border: 1px solid var(--gold);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .contact-info-list {
+      display: grid;
+      gap: 1.6rem;
+      margin-bottom: 2.2rem;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.1rem;
+    }
+
+    .contact-icon {
+      width: 44px;
+      height: 44px;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .contact-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--gold);
+      margin-bottom: 0.2rem;
+    }
+
+    .contact-value {
+      font-size: 0.98rem;
+      color: var(--cream);
+    }
+
+    .contact-actions {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.9rem;
+    }
+
+    .map-card {
+      background-color: var(--charcoal);
+      color: var(--cream);
+      border: 1px solid var(--gold);
+      padding: 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-image: linear-gradient(rgba(36, 22, 16, 0.88), rgba(36, 22, 16, 0.94)),
+        url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hours-box {
+      border: 1px solid rgba(201, 164, 92, 0.35);
+      background-color: rgba(36, 22, 16, 0.8);
+      padding: 1.75rem;
+      margin: 1.5rem 0;
+    }
+
+    .hours-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.65rem 0;
+      border-bottom: 1px dashed rgba(201, 164, 92, 0.25);
+      font-size: 0.92rem;
+    }
+
+    .hours-row:last-child {
+      border-bottom: none;
+    }
+
+    .hours-closed {
+      color: #e58e73;
+      font-weight: 600;
+    }
+
+    /* 10. FOOTER */
+    .footer {
+      background-color: #180e0a;
+      color: var(--cream);
+      padding: 4.5rem 0 2rem;
+      border-top: 1px solid rgba(201, 164, 92, 0.3);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 0.8fr 1fr;
+      gap: 3rem;
+      padding-bottom: 3rem;
+      border-bottom: 1px solid rgba(201, 164, 92, 0.15);
+    }
+
+    .footer-about p {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin: 1rem 0 1.5rem;
+      max-width: 380px;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 0.8rem;
+    }
+
+    .social-link {
+      width: 40px;
+      height: 40px;
+      border: 1px solid rgba(201, 164, 92, 0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold);
+      transition: var(--transition);
+    }
+
+    .social-link:hover {
+      background-color: var(--gold);
+      color: var(--dark-brown);
+      transform: translateY(-3px);
+    }
+
+    .footer-heading {
+      font-family: var(--font-heading);
+      font-size: 1.2rem;
+      color: var(--gold);
+      margin-bottom: 1.25rem;
+    }
+
+    .footer-links li {
+      margin-bottom: 0.65rem;
+    }
+
+    .footer-links a {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .footer-links a:hover {
+      color: var(--gold);
+      padding-left: 5px;
+    }
+
+    .footer-contact-list li {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-contact-list strong {
+      color: var(--cream);
+    }
+
+    .footer-bottom {
+      padding-top: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .team-credit {
+      color: var(--gold);
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+
+    /* FLOATING WHATSAPP BUTTON */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 1.8rem;
+      left: 1.8rem;
+      z-index: 1500;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.65rem;
+      background-color: var(--whatsapp-green);
+      color: #ffffff;
+      padding: 0.8rem 1.2rem;
+      border-radius: 50px;
+      box-shadow: 0 10px 28px rgba(37, 211, 102, 0.4);
+      font-weight: 600;
+      font-size: 0.86rem;
+      letter-spacing: 0.4px;
+      transition: var(--transition);
+      border: 2px solid rgba(255, 255, 255, 0.25);
+    }
+
+    .whatsapp-float:hover {
+      background-color: var(--whatsapp-dark);
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 0 14px 32px rgba(37, 211, 102, 0.55);
+    }
+
+    .whatsapp-float svg {
+      width: 24px;
+      height: 24px;
+      flex-shrink: 0;
+    }
+
+    /* FLOATING CART PILL (Above Back to Top) */
+    .floating-cart-pill {
+      position: fixed;
+      bottom: 5.4rem;
+      right: 1.8rem;
+      z-index: 1490;
+      background-color: var(--dark-brown);
+      color: var(--gold);
+      border: 1.5px solid var(--gold);
+      padding: 0.75rem 1.2rem;
+      border-radius: 50px;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 0.82rem;
+      font-weight: 600;
+      box-shadow: var(--shadow-dark);
+      transition: var(--transition);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(15px);
+    }
+
+    .floating-cart-pill.has-items {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .floating-cart-pill:hover {
+      background-color: var(--gold);
+      color: var(--dark-brown);
+    }
+
+    /* Back to Top Button */
+    .back-to-top {
+      position: fixed;
+      bottom: 1.8rem;
+      right: 1.8rem;
+      width: 46px;
+      height: 46px;
+      background-color: var(--gold);
+      color: var(--dark-brown);
+      border: 1px solid var(--dark-brown);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1480;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(15px);
+      transition: var(--transition);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .back-to-top.show {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .back-to-top:hover {
+      background-color: var(--gold-light);
+      transform: translateY(-3px);
+    }
+
+    /* SLIDE-OVER CART & CHECKOUT DRAWER */
+    .cart-backdrop {
+      position: fixed;
+      inset: 0;
+      background-color: rgba(12, 7, 5, 0.82);
+      backdrop-filter: blur(4px);
+      z-index: 2100;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.35s ease;
+    }
+
+    .cart-backdrop.open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .cart-drawer {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 100%;
+      max-width: 460px;
+      height: 100vh;
+      background-color: var(--dark-brown);
+      border-left: 1px solid var(--gold);
+      z-index: 2150;
+      display: flex;
+      flex-direction: column;
+      transform: translateX(100%);
+      transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+      box-shadow: -12px 0 40px rgba(0, 0, 0, 0.7);
+    }
+
+    .cart-drawer.open {
+      transform: translateX(0);
+    }
+
+    .cart-drawer-header {
+      padding: 1.4rem 1.6rem;
+      border-bottom: 1px solid rgba(201, 164, 92, 0.25);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: var(--charcoal);
+    }
+
+    .cart-drawer-title {
+      font-family: var(--font-heading);
+      font-size: 1.35rem;
+      color: var(--gold);
+    }
+
+    .cart-close-btn {
+      width: 36px;
+      height: 36px;
+      border: 1px solid rgba(201, 164, 92, 0.4);
+      color: var(--cream);
+      font-size: 1.3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition);
+    }
+
+    .cart-close-btn:hover {
+      background-color: var(--gold);
+      color: var(--dark-brown);
+    }
+
+    .cart-drawer-body {
+      padding: 1.5rem 1.6rem;
+      overflow-y: auto;
+      flex-grow: 1;
+    }
+
+    .cart-empty-state {
+      text-align: center;
+      padding: 3.5rem 1rem;
+      color: var(--text-muted);
+    }
+
+    .cart-empty-state p {
+      margin-bottom: 1.4rem;
+      font-size: 0.95rem;
+    }
+
+    .cart-items-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-bottom: 1.8rem;
+    }
+
+    .cart-item-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      background-color: var(--charcoal);
+      border: 1px solid rgba(201, 164, 92, 0.22);
+      padding: 0.95rem 1.1rem;
+    }
+
+    .cart-item-info h4 {
+      font-family: var(--font-heading);
+      font-size: 1.05rem;
+      color: var(--cream);
+      margin-bottom: 0.15rem;
+    }
+
+    .cart-item-info span {
+      font-size: 0.84rem;
+      color: var(--gold);
+      font-weight: 600;
+    }
+
+    .cart-qty-controls {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .qty-btn {
+      width: 28px;
+      height: 28px;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.95rem;
+      transition: var(--transition);
+    }
+
+    .qty-btn:hover {
+      background-color: var(--gold);
+      color: var(--dark-brown);
+    }
+
+    .qty-count {
+      min-width: 24px;
+      text-align: center;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--cream);
+    }
+
+    .remove-item-btn {
+      color: #e58e73;
+      font-size: 0.78rem;
+      margin-left: 0.35rem;
+      text-decoration: underline;
+    }
+
+    /* Checkout Customer Form inside Drawer */
+    .checkout-section {
+      border-top: 1px solid rgba(201, 164, 92, 0.3);
+      padding-top: 1.4rem;
+    }
+
+    .checkout-section-title {
+      font-family: var(--font-heading);
+      font-size: 1.15rem;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+
+    .checkout-form-fields {
+      display: flex;
+      flex-direction: column;
+      gap: 0.95rem;
+    }
+
+    .cart-drawer-footer {
+      padding: 1.25rem 1.6rem;
+      border-top: 1px solid rgba(201, 164, 92, 0.25);
+      background-color: var(--charcoal);
+    }
+
+    .cart-total-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+      font-family: var(--font-heading);
+      font-size: 1.3rem;
+      color: var(--cream);
+    }
+
+    .cart-total-amount {
+      color: var(--gold);
+      font-weight: 700;
+    }
+
+    /* Toast Notification */
+    .toast-notification {
+      position: fixed;
+      bottom: 1.8rem;
+      left: 50%;
+      transform: translateX(-50%) translateY(30px);
+      background-color: var(--gold);
+      color: var(--dark-brown);
+      padding: 0.75rem 1.5rem;
+      border-radius: 3px;
+      font-size: 0.86rem;
+      font-weight: 600;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      z-index: 2500;
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.3s ease;
+    }
+
+    .toast-notification.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    /* Responsive Media Queries */
+    @media (max-width: 1080px) {
+      .highlights-grid,
+      .bestsellers-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+      .reservation-form-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .about-image {
+        height: 400px;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .hamburger {
+        display: flex;
+      }
+
+      .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 340px;
+        height: 100vh;
+        background-color: var(--dark-brown);
+        border-left: 1px solid rgba(201, 164, 92, 0.3);
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.5rem;
+        transition: right 0.4s ease;
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.6);
+        z-index: 1001;
+      }
+
+      .nav-links.open {
+        right: 0;
+      }
+
+      .gallery-grid,
+      .testimonials-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        background-attachment: scroll;
+      }
+    }
+
+    @media (max-width: 580px) {
+      .section-padding {
+        padding: 4.2rem 0;
+      }
+      .highlights-grid,
+      .bestsellers-grid,
+      .about-features,
+      .contact-actions,
+      .menu-grid,
+      .reservation-form-grid,
+      .card-action-group {
+        grid-template-columns: 1fr;
+      }
+      .contact-info-panel,
+      .map-card,
+      .reservation-wrapper {
+        padding: 1.75rem;
+      }
+      .hero-buttons .btn {
+        width: 100%;
+      }
+      .whatsapp-float span {
+        display: none;
+      }
+      .whatsapp-float {
+        padding: 0.85rem;
+        border-radius: 50%;
+        bottom: 1.25rem;
+        left: 1.25rem;
+      }
+      .back-to-top {
+        bottom: 1.25rem;
+        right: 1.25rem;
+      }
+      .floating-cart-pill {
+        bottom: 4.8rem;
+        right: 1.25rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. STICKY NAVIGATION -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="The Urban Spice Home">
+        <span class="brand-name">THE URBAN SPICE</span>
+        <span class="brand-tagline">Every Bite Tells a Story</span>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#hero" class="nav-item">Home</a></li>
+          <li><a href="#about" class="nav-item">About</a></li>
+          <li><a href="#menu" class="nav-item">Menu</a></li>
+          <li><a href="#bestsellers" class="nav-item">Bestsellers</a></li>
+          <li><a href="#gallery" class="nav-item">Gallery</a></li>
+          <li><a href="#reserveTable" class="nav-item">Book Table</a></li>
+          <li><a href="#contact" class="nav-item">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="cart-trigger-btn js-open-cart" aria-label="Open Order Cart">
+          <span>Cart</span>
+          <span class="cart-badge js-cart-count">0</span>
+        </button>
+
+        <button type="button" class="hamburger" id="hamburgerBtn" aria-label="Toggle Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 2. HERO SECTION -->
+    <section class="hero" id="hero">
+      <div class="hero-content reveal">
+        <div class="hero-badge">
+          <span>Est. 2019 • Adajan, Surat</span>
+        </div>
+        <h1 class="hero-title">
+          Experience Flavours <span>Beyond Imagination.</span>
+        </h1>
+        <p class="hero-description">
+          Discover exceptional taste, authentic ingredients and unforgettable dining experiences at The Urban Spice.
+        </p>
+        <div class="hero-buttons">
+          <a href="#menu" class="btn btn-primary">Explore Our Menu</a>
+          <a href="#reserveTable" class="btn btn-outline">Reserve a Table</a>
+          <button type="button" class="btn btn-outline js-whatsapp-general">
+            Order on WhatsApp
+          </button>
+        </div>
+
+        <div class="hero-meta">
+          <div class="hero-meta-item">
+            <strong>Multi-Cuisine</strong>
+            Authentic Indian, Chinese &amp; Street Food
+          </div>
+          <div class="hero-meta-item">
+            <strong>11:00 AM – 11:00 PM</strong>
+            Open Tuesday to Sunday (Monday Closed)
+          </div>
+          <div class="hero-meta-item">
+            <strong>Adajan, Surat</strong>
+            Shop 12, Green Avenue
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. ABOUT US -->
+    <section class="about-section section-padding" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image-wrapper reveal">
+            <img
+              src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=1000&q=85"
+              alt="Authentic Indian dishes served at The Urban Spice in Adajan, Surat"
+              class="about-image"
+              loading="lazy"
+            >
+            <div class="established-badge">
+              <span class="year">2019</span>
+              <span class="label">Established</span>
+            </div>
+          </div>
+
+          <div class="about-content reveal">
+            <span class="section-subtitle">Our Culinary Heritage</span>
+            <h2 class="section-title">Where Every Bite Tells a Story</h2>
+            <p class="about-tagline-quote">
+              "Crafted for connoisseurs of authentic spices, vibrant street flavours, and warm Gujarati hospitality."
+            </p>
+            <p class="about-story">
+              The Urban Spice offers a delightful dining experience with authentic Indian flavours, delicious street food and modern cuisine. Our passion for quality ingredients, exceptional taste and warm hospitality makes every visit memorable.
+            </p>
+
+            <div class="about-features">
+              <div class="about-feature-item">
+                <div class="about-feature-icon" aria-hidden="true">✦</div>
+                <span class="about-feature-title">Fresh Ingredients</span>
+              </div>
+              <div class="about-feature-item">
+                <div class="about-feature-icon" aria-hidden="true">✦</div>
+                <span class="about-feature-title">Expert Chefs</span>
+              </div>
+              <div class="about-feature-item">
+                <div class="about-feature-icon" aria-hidden="true">✦</div>
+                <span class="about-feature-title">Authentic Flavours</span>
+              </div>
+              <div class="about-feature-item">
+                <div class="about-feature-icon" aria-hidden="true">✦</div>
+                <span class="about-feature-title">Premium Hospitality</span>
+              </div>
+            </div>
+
+            <a href="#reserveTable" class="btn btn-primary">Reserve Your Table</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SPECIAL HIGHLIGHTS -->
+    <section class="highlights-section section-padding" id="highlights">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">Why Dine With Us</span>
+          <h2 class="section-title">The Urban Spice Distinction</h2>
+          <p class="section-desc">
+            Every plate leaves our kitchen with uncompromising attention to aroma, presentation, and purity.
+          </p>
+        </div>
+
+        <div class="highlights-grid">
+          <article class="highlight-card reveal">
+            <div class="highlight-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M12 2L15 8L21 9L16.5 14L18 20L12 17L6 20L7.5 14L3 9L9 8L12 2Z"/>
+              </svg>
+            </div>
+            <h3 class="highlight-title">Hand-Ground Spices</h3>
+            <p class="highlight-text">
+              Aromatic masalas roasted and blended in-house for unmistakable depth in every curry and marinade.
+            </p>
+          </article>
+
+          <article class="highlight-card reveal">
+            <div class="highlight-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3 class="highlight-title">100% Pure Vegetarian</h3>
+            <p class="highlight-text">
+              Farm-fresh vegetables, artisan paneer, and wholesome grains prepared in a dedicated hygienic kitchen.
+            </p>
+          </article>
+
+          <article class="highlight-card reveal">
+            <div class="highlight-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M12 7v5l3 3"/>
+              </svg>
+            </div>
+            <h3 class="highlight-title">Multi-Cuisine Mastery</h3>
+            <p class="highlight-text">
+              From North Indian tandoor classics and South Indian crisp dosas to Indo-Chinese wok favourites.
+            </p>
+          </article>
+
+          <article class="highlight-card reveal">
+            <div class="highlight-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+            </div>
+            <h3 class="highlight-title">Warm Family Ambience</h3>
+            <p class="highlight-text">
+              Refined interiors in the heart of Adajan designed for celebratory dinners and relaxed gatherings.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. FOOD MENU -->
+    <section class="menu-section section-padding" id="menu">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">Curated Selection</span>
+          <h2 class="section-title">Our Signature Food Menu</h2>
+          <p class="section-desc">
+            Add your favourite dishes to the cart for multi-item checkout or order directly via WhatsApp.
+          </p>
+        </div>
+
+        <div class="menu-filters reveal" role="tablist" aria-label="Menu Category Filter">
+          <button type="button" class="filter-btn active" data-filter="all">All Dishes</button>
+          <button type="button" class="filter-btn" data-filter="Starter">Starter</button>
+          <button type="button" class="filter-btn" data-filter="Chinese">Chinese</button>
+          <button type="button" class="filter-btn" data-filter="Main Course">Main Course</button>
+          <button type="button" class="filter-btn" data-filter="Rice">Rice</button>
+          <button type="button" class="filter-btn" data-filter="Indian Bread">Indian Bread</button>
+          <button type="button" class="filter-btn" data-filter="South Indian">South Indian</button>
+          <button type="button" class="filter-btn" data-filter="Special">Special</button>
+          <button type="button" class="filter-btn" data-filter="Beverage">Beverage</button>
+          <button type="button" class="filter-btn" data-filter="Dessert">Dessert</button>
+        </div>
+
+        <div class="menu-grid" id="menuGrid">
+          <!-- 1. Paneer Tikka -->
+          <article class="menu-card reveal" data-category="Starter">
+            <div class="menu-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=700&q=80"
+                alt="Paneer Tikka Starter at The Urban Spice"
+                loading="lazy"
+              >
+              <span class="menu-category-tag">Starter</span>
+            </div>
+            <div class="menu-body">
+              <div class="menu-header-row">
+                <h3 class="menu-item-name">Paneer Tikka</h3>
+                <span class="menu-item-price">₹180</span>
+              </div>
+              <p class="menu-item-desc">
+                Char-grilled cottage cheese cubes marinated in spiced yogurt, bell peppers, and smoky tandoori herbs.
+              </p>
+              <div class="card-action-group">
+                <button type="button" class="btn btn-primary btn-sm js-add-to-cart" data-name="Paneer Tikka" data-price="180">
+                  + Add to Cart
+                </button>
+                <button type="button" class="btn btn-outline btn-sm js-order-item" data-name="Paneer Tikka" data-price="180">
+                  Order Now
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. Veg Manchurian -->
+          <article class="menu-card reveal" data-category="Starter">
+            <div class="menu-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=700&q=80"
+                alt="Veg Manchurian Starter at The Urban Spice"
+                loading="lazy"
+              >
+              <span class="menu-category-tag">Starter</span>
+            </div>
+            <div class="menu-body">
+              <div class="menu-header-row">
+                <h3 class="menu-item-name">Veg Manchurian</h3>
+                <span class="menu-item-price">₹140</span>
+              </div>
+              <p class="menu-item-desc">
+                Crisp golden vegetable dumplings tossed in a savoury garlic, ginger, soy, and spring onion glaze.
+              </p>
+              <div class="card-action-group">
+                <button type="button" class="btn btn-primary btn-sm js-add-to-cart" data-name="Veg Manchurian" data-price="140">
+                  + Add to Cart
+                </button>
+                <button type="button" class="btn btn-outline btn-sm js-order-item" data-name="Veg Manchurian" data-price="140">
+                  Order Now
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. Hakka Noodles -->
+          <article class="menu-card reveal" data-category="Chinese">
+            <div class="menu-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=700&q=80"
+                alt="Hakka Noodles Chinese dish at The Urban Spice"
+                loading="lazy"
+              >
+              <span class="menu-category-tag">Chinese</span>
+            </div>
+            <div class="menu-body">
+              <div class="menu-header-row">
+                <h3 class="menu-item-name">Hakka Noodles</h3>
+                <span class="menu-item-price">₹160</span>
+              </div>
+              <p class="menu-item-desc">
+                Wok-tossed noodles with julienned bell peppers, crunchy cabbage, carrots, and aromatic white pepper.
+              </p>
+              <div class="card-action-group">
+                <button type="button" class="btn btn-primary btn-sm js-add-to-cart" data-name="Hakka Noodles" data-price="160">
+                  + Add to Cart
+                </button>
+                <button type="button" class="btn btn-outline btn-sm js-order-item" data-name="Hakka Noodles" data-price="160">
+                  Order Now
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. Paneer Butter Masala -->
+          <article class="menu-card reveal" data-category="Main Course">
+            <div class="menu-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=700&q=80"
+                alt="Paneer Butter Masala Main Course at The Urban Spice"
+                loading="lazy"
+              >
+              <span class="menu-category-tag">Main Course</span>
+            </div>
+            <div class="menu-body">
+              <div class="menu-header-row">
+                <h3 class="menu-item-name">Paneer Butter Masala</h3>
+                <span class="menu-item-price">₹220</span>
+              </div>
+              <p class="menu-item-desc">
+                Soft paneer simmered in a velvety tomato and cashew gravy finished with cream and crushed kasuri methi.
+              </p>
+              <div class="card-action-group">
+                <button type="button" class="btn btn-primary btn-sm js-add-to-cart" data-name="Paneer Butter Masala" data-price="220">
+                  + Add to Cart
+                </button>
+                <button type="button" class="btn btn-outline btn-sm js-order-item" data-name="Paneer Butter Masala" data-price="220">
+                  Order Now
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. Veg Biryani -->
+          <article class="menu-card reveal" data-category="Rice">
+            <div class="menu-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=700&q=80"
+                alt="Veg Biryani Rice dish at The Urban Spice"
+                loading="lazy"
+              >
+              <span class="menu-category-tag">Rice</span>
+            </div>
+            <div class="menu-body">
+              <div class="menu-header-row">
+                <h3 class="menu-item-name">Veg Biryani</h3>
+                <span class="menu-item-price">₹180</span>
+              </div>
+              <p class="menu-item-desc">
+                Fragrant long-grain basmati rice slow-cooked on dum with garden vegetables, saffron, and whole spices.
+              </p>
+              <div class="card-action-group">
+                <button type="button" class="btn btn-primary btn-sm js-add-to-cart" data-name="Veg Biryani" data-price="180">
+                  + Add to Cart
+                </button>
+                <button type="button" class="btn btn-outline btn-sm js-order-item" data-name="Veg Biryani" data-price="180">
+                  Order Now
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. Butter Naan -->
+          <article class="menu-card reveal" data-category="Indian Bread">
+            <div class="menu-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=700&q=80"
+                alt="Butter Naan Indian Bread at The Urban Spice"
+                loading="lazy"
+              >
+              <span class="menu-category-tag">Indian Bread</span>
+            </div>
+            <div class="menu-body">
+              <div class="menu-header-row">
+                <h3 class="menu-item-name">Butter Naan</h3>
+                <span class="menu-item-price">₹40</span>
+              </div>
+              <p class="menu-item-desc">
+                Soft leavened clay-oven flatbread brushed generously with melted butter and served piping hot.
+              </p>
+              <div class="card-action-group">
+                <button type="button" class="btn btn-primary btn-sm js-add-to-cart" data-name="Butter Naan" data-price="40">
+                  + Add to Cart
+                </button>
+                <button type="button" class="btn btn-outline btn-sm js-order-item" data-name="Butter Naan" data-price="40">
+                  Order Now
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 7. Masala Dosa -->
+          <article class="menu-card reveal" data-category="South Indian">
+            <div class="menu-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1668236543090-82eba5ee5976?auto=format&fit=crop&w=700&q=80"
+                alt="Masala Dosa South Indian dish at The Urban Spice"
+                loading="lazy"
+              >
+              <span class="menu-category-tag">South Indian</span>
+            </div>
+            <div class="menu-body">
+              <div class="menu-header-row">
+                <h3 class="menu-item-name">Masala Dosa</h3>
+                <span class="menu-item-price">₹100</span>
+              </div>
+              <p class="menu-item-desc">
+                Crisp fermented rice and lentil crepe filled with tempered potato masala, served with chutney and sambar.
+              </p>
+              <div class="card-action-group">
+                <button type="button" class="btn btn-primary btn-sm js-add-to-cart" data-name="Masala Dosa" data-price="100">
+                  + Add to Cart
+                </button>
+                <button type="button" class="btn btn-outline btn-sm js-order-item" data-name="Masala Dosa" data-price="100">
+                  Order Now
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 8. Royal Thali -->
+          <article class="menu-card reveal" data-category="Special">
+            <div class="menu-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=700&q=80"
+                alt="Royal Thali Special platter at The Urban Spice"
+                loading="lazy"
+              >
+              <span class="menu-category-tag">Special</span>
+            </div>
+            <div class="menu-body">
+              <div class="menu-header-row">
+                <h3 class="menu-item-name">Royal Thali</h3>
+                <span class="menu-item-price">₹250</span>
+              </div>
+              <p class="menu-item-desc">
+                A grand festive platter featuring signature paneer curry, seasonal veg, dal, jeera rice, breads, and sweet.
+              </p>
+              <div class="card-action-group">
+                <button type="button" class="btn btn-primary btn-sm js-add-to-cart" data-name="Royal Thali" data-price="250">
+                  + Add to Cart
+                </button>
+                <button type="button" class="btn btn-outline btn-sm js-order-item" data-name="Royal Thali" data-price="250">
+                  Order Now
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 9. Cold Coffee -->
+          <article class="menu-card reveal" data-category="Beverage">
+            <div class="menu-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=700&q=80"
+                alt="Cold Coffee Beverage at The Urban Spice"
+                loading="lazy"
+              >
+              <span class="menu-category-tag">Beverage</span>
+            </div>
+            <div class="menu-body">
+              <div class="menu-header-row">
+                <h3 class="menu-item-name">Cold Coffee</h3>
+                <span class="menu-item-price">₹90</span>
+              </div>
+              <p class="menu-item-desc">
+                Rich espresso blended with chilled creamy milk and cocoa, frothed to perfection for a refreshing finish.
+              </p>
+              <div class="card-action-group">
+                <button type="button" class="btn btn-primary btn-sm js-add-to-cart" data-name="Cold Coffee" data-price="90">
+                  + Add to Cart
+                </button>
+                <button type="button" class="btn btn-outline btn-sm js-order-item" data-name="Cold Coffee" data-price="90">
+                  Order Now
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 10. Chocolate Brownie -->
+          <article class="menu-card reveal" data-category="Dessert">
+            <div class="menu-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=700&q=80"
+                alt="Chocolate Brownie Dessert at The Urban Spice"
+                loading="lazy"
+              >
+              <span class="menu-category-tag">Dessert</span>
+            </div>
+            <div class="menu-body">
+              <div class="menu-header-row">
+                <h3 class="menu-item-name">Chocolate Brownie</h3>
+                <span class="menu-item-price">₹120</span>
+              </div>
+              <p class="menu-item-desc">
+                Warm, fudgy dark chocolate brownie with a delicate crackly top and decadent molten cocoa notes.
+              </p>
+              <div class="card-action-group">
+                <button type="button" class="btn btn-primary btn-sm js-add-to-cart" data-name="Chocolate Brownie" data-price="120">
+                  + Add to Cart
+                </button>
+                <button type="button" class="btn btn-outline btn-sm js-order-item" data-name="Chocolate Brownie" data-price="120">
+                  Order Now
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. BESTSELLERS -->
+    <section class="bestsellers-section section-padding" id="bestsellers">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">Chef's Recommendations</span>
+          <h2 class="section-title">Our Bestselling Creations</h2>
+          <p class="section-desc">
+            The most loved dishes at The Urban Spice, crafted to perfection and ordered time and again.
+          </p>
+        </div>
+
+        <div class="bestsellers-grid">
+          <!-- Bestseller 1: Paneer Tikka -->
+          <article class="bestseller-card reveal">
+            <div class="bestseller-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=700&q=80"
+                alt="Bestseller Paneer Tikka"
+                loading="lazy"
+              >
+              <span class="signature-ribbon">Bestseller</span>
+            </div>
+            <div class="bestseller-content">
+              <h3 class="bestseller-title">Paneer Tikka</h3>
+              <div class="bestseller-price">₹180</div>
+              <p class="bestseller-desc">
+                Smoky clay-oven roasted paneer cubes marinated in traditional hung curd and aromatic spices.
+              </p>
+              <div class="card-action-group">
+                <button type="button" class="btn btn-primary btn-sm js-add-to-cart" data-name="Paneer Tikka" data-price="180">
+                  + Cart
+                </button>
+                <button type="button" class="btn btn-outline btn-sm js-order-item" data-name="Paneer Tikka" data-price="180">
+                  Order Now
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Bestseller 2: Veg Manchurian -->
+          <article class="bestseller-card reveal">
+            <div class="bestseller-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=700&q=80"
+                alt="Bestseller Veg Manchurian"
+                loading="lazy"
+              >
+              <span class="signature-ribbon">Bestseller</span>
+            </div>
+            <div class="bestseller-content">
+              <h3 class="bestseller-title">Veg Manchurian</h3>
+              <div class="bestseller-price">₹140</div>
+              <p class="bestseller-desc">
+                Crispy vegetable dumplings tossed in a bold Indo-Chinese roasted garlic and soy sauce.
+              </p>
+              <div class="card-action-group">
+                <button type="button" class="btn btn-primary btn-sm js-add-to-cart" data-name="Veg Manchurian" data-price="140">
+                  + Cart
+                </button>
+                <button type="button" class="btn btn-outline btn-sm js-order-item" data-name="Veg Manchurian" data-price="140">
+                  Order Now
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Bestseller 3: Paneer Butter Masala -->
+          <article class="bestseller-card reveal">
+            <div class="bestseller-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=700&q=80"
+                alt="Bestseller Paneer Butter Masala"
+                loading="lazy"
+              >
+              <span class="signature-ribbon">Bestseller</span>
+            </div>
+            <div class="bestseller-content">
+              <h3 class="bestseller-title">Paneer Butter Masala</h3>
+              <div class="bestseller-price">₹220</div>
+              <p class="bestseller-desc">
+                Rich, creamy tomato-cashew gravy with melt-in-mouth cottage cheese and fenugreek aroma.
+              </p>
+              <div class="card-action-group">
+                <button type="button" class="btn btn-primary btn-sm js-add-to-cart" data-name="Paneer Butter Masala" data-price="220">
+                  + Cart
+                </button>
+                <button type="button" class="btn btn-outline btn-sm js-order-item" data-name="Paneer Butter Masala" data-price="220">
+                  Order Now
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Bestseller 4: Royal Thali -->
+          <article class="bestseller-card reveal">
+            <div class="bestseller-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=700&q=80"
+                alt="Bestseller Royal Thali"
+                loading="lazy"
+              >
+              <span class="signature-ribbon">Bestseller</span>
+            </div>
+            <div class="bestseller-content">
+              <h3 class="bestseller-title">Royal Thali</h3>
+              <div class="bestseller-price">₹250</div>
+              <p class="bestseller-desc">
+                Complete royal feast uniting our finest curries, dal, fragrant rice, Indian breads, and dessert.
+              </p>
+              <div class="card-action-group">
+                <button type="button" class="btn btn-primary btn-sm js-add-to-cart" data-name="Royal Thali" data-price="250">
+                  + Cart
+                </button>
+                <button type="button" class="btn btn-outline btn-sm js-order-item" data-name="Royal Thali" data-price="250">
+                  Order Now
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. RESTAURANT GALLERY -->
+    <section class="gallery-section section-padding" id="gallery">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">Visual Journey</span>
+          <h2 class="section-title">Inside The Urban Spice</h2>
+          <p class="section-desc">
+            Click on any photograph to view a full-screen preview of our ambience, culinary artistry, and dining moments.
+          </p>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid">
+          <!-- 1. Restaurant Exterior -->
+          <div
+            class="gallery-item reveal"
+            tabindex="0"
+            role="button"
+            aria-label="View Restaurant Exterior"
+            data-src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1400&q=85"
+            data-caption="Restaurant Exterior — Welcoming Evening Facade at Green Avenue, Adajan"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80"
+              alt="Restaurant exterior evening view"
+              loading="lazy"
+            >
+            <div class="gallery-overlay">
+              <span class="gallery-caption-tag">Exterior</span>
+              <h3 class="gallery-caption-title">Welcoming Evening Facade</h3>
+            </div>
+          </div>
+
+          <!-- 2. Restaurant Interior -->
+          <div
+            class="gallery-item reveal"
+            tabindex="0"
+            role="button"
+            aria-label="View Restaurant Interior"
+            data-src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1400&q=85"
+            data-caption="Restaurant Interior — Warm Luxury Lighting & Seating"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80"
+              alt="Luxury restaurant interior dining room"
+              loading="lazy"
+            >
+            <div class="gallery-overlay">
+              <span class="gallery-caption-tag">Interior</span>
+              <h3 class="gallery-caption-title">Luxury Dining Hall</h3>
+            </div>
+          </div>
+
+          <!-- 3. Food Photography -->
+          <div
+            class="gallery-item reveal"
+            tabindex="0"
+            role="button"
+            aria-label="View Food Photography"
+            data-src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=1400&q=85"
+            data-caption="Food Photography — Authentic Indian Curries & Artisanal Breads"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=800&q=80"
+              alt="Authentic Indian food spread"
+              loading="lazy"
+            >
+            <div class="gallery-overlay">
+              <span class="gallery-caption-tag">Food Photography</span>
+              <h3 class="gallery-caption-title">Rich Indian Delicacies</h3>
+            </div>
+          </div>
+
+          <!-- 4. Chef Preparing Food -->
+          <div
+            class="gallery-item reveal"
+            tabindex="0"
+            role="button"
+            aria-label="View Chef Preparing Food"
+            data-src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=1400&q=85"
+            data-caption="Culinary Craft — Our Chefs Plating Fresh Multi-Cuisine Dishes"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=800&q=80"
+              alt="Chef preparing gourmet dish in kitchen"
+              loading="lazy"
+            >
+            <div class="gallery-overlay">
+              <span class="gallery-caption-tag">Culinary Craft</span>
+              <h3 class="gallery-caption-title">Master Chefs at Work</h3>
+            </div>
+          </div>
+
+          <!-- 5. Dining Experience -->
+          <div
+            class="gallery-item reveal"
+            tabindex="0"
+            role="button"
+            aria-label="View Dining Experience"
+            data-src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1400&q=85"
+            data-caption="Dining Experience — Memorable Gatherings & Hospitality"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80"
+              alt="Fine dining table setting experience"
+              loading="lazy"
+            >
+            <div class="gallery-overlay">
+              <span class="gallery-caption-tag">Hospitality</span>
+              <h3 class="gallery-caption-title">Unforgettable Dining Experience</h3>
+            </div>
+          </div>
+
+          <!-- 6. Special Dishes -->
+          <div
+            class="gallery-item reveal"
+            tabindex="0"
+            role="button"
+            aria-label="View Special Dishes"
+            data-src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1400&q=85"
+            data-caption="Special Dishes — The Grand Royal Thali & House Specialties"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80"
+              alt="Special Royal Thali platter"
+              loading="lazy"
+            >
+            <div class="gallery-overlay">
+              <span class="gallery-caption-tag">Specialties</span>
+              <h3 class="gallery-caption-title">Signature Royal Platter</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image Preview">
+      <div class="lightbox-inner">
+        <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Close Preview">&times;</button>
+        <button type="button" class="lightbox-prev" id="lightboxPrev" aria-label="Previous Image">&#10094;</button>
+        <img src="" alt="Enlarged gallery preview" class="lightbox-img" id="lightboxImg">
+        <button type="button" class="lightbox-next" id="lightboxNext" aria-label="Next Image">&#10095;</button>
+        <p class="lightbox-caption" id="lightboxCaption"></p>
+      </div>
+    </div>
+
+    <!-- 8. CUSTOMER TESTIMONIALS (SAMPLE / DEMO) -->
+    <section class="testimonials-section section-padding" id="testimonials">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">Guest Impressions</span>
+          <h2 class="section-title">Sample Dining Testimonials</h2>
+          <p class="section-desc">
+            Illustrative guest feedback cards demonstrating the dining experience at The Urban Spice.
+          </p>
+          <span class="sample-disclaimer-banner">Sample / Demo Testimonials for Layout Preview</span>
+        </div>
+
+        <div class="testimonials-grid">
+          <article class="testimonial-card reveal">
+            <div>
+              <span class="sample-badge">Sample / Demo Testimonial</span>
+              <p class="testimonial-quote">
+                "The Paneer Butter Masala and garlic-brushed Butter Naan remind us why family dinners in Adajan are so special. Warm lighting and attentive table service throughout the evening."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-name">Sample Guest — Family Diner</div>
+              <div class="author-context">Demo Review • Adajan, Surat</div>
+            </div>
+          </article>
+
+          <article class="testimonial-card reveal">
+            <div>
+              <span class="sample-badge">Sample / Demo Testimonial</span>
+              <p class="testimonial-quote">
+                "Ordered the Royal Thali and Paneer Tikka for a weekend celebration. Every accompaniment was fresh, balanced in spice, and arrived piping hot."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-name">Sample Guest — Weekend Patron</div>
+              <div class="author-context">Demo Review • Multi-Cuisine Enthusiast</div>
+            </div>
+          </article>
+
+          <article class="testimonial-card reveal">
+            <div>
+              <span class="sample-badge">Sample / Demo Testimonial</span>
+              <p class="testimonial-quote">
+                "From crisp Masala Dosa to Veg Manchurian and Cold Coffee, the variety makes it effortless to dine with a group where everyone craves something different."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-name">Sample Guest — Local Foodie</div>
+              <div class="author-context">Demo Review • Surat, Gujarat</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. CONTACT, LOCATION & TABLE RESERVATION -->
+    <section class="contact-section section-padding" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">Reserve or Order</span>
+          <h2 class="section-title">Table Reservation &amp; Contact</h2>
+          <p class="section-desc">
+            Book your table in advance or reach out to us directly via phone, WhatsApp, or email in Adajan, Surat.
+          </p>
+        </div>
+
+        <!-- Reserve a Table Form (Redirects to WhatsApp) -->
+        <div class="reservation-wrapper reveal" id="reserveTable">
+          <div class="reservation-header">
+            <span class="section-subtitle">Instant WhatsApp Booking</span>
+            <h3>Reserve Your Table at The Urban Spice</h3>
+            <p>Fill in your dining details below and confirm your table reservation directly on WhatsApp.</p>
+          </div>
+
+          <form id="reservationForm">
+            <div class="reservation-form-grid">
+              <div class="form-group">
+                <label for="resName" class="form-label">Full Name *</label>
+                <input type="text" id="resName" class="form-control" placeholder="Enter your full name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="resPhone" class="form-label">Mobile Number *</label>
+                <input type="tel" id="resPhone" class="form-control" placeholder="e.g. +91 98765 43210" required>
+              </div>
+
+              <div class="form-group">
+                <label for="resGuests" class="form-label">Number of Guests *</label>
+                <select id="resGuests" class="form-control" required>
+                  <option value="2 Guests">2 Guests</option>
+                  <option value="3 Guests">3 Guests</option>
+                  <option value="4 Guests" selected>4 Guests</option>
+                  <option value="5 Guests">5 Guests</option>
+                  <option value="6 Guests">6 Guests</option>
+                  <option value="7–10 Guests">7–10 Guests</option>
+                  <option value="10+ Guests (Family/Party)">10+ Guests (Family/Party)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="resDate" class="form-label">Reservation Date *</label>
+                <input type="date" id="resDate" class="form-control" required>
+              </div>
+
+              <div class="form-group">
+                <label for="resTime" class="form-label">Preferred Time *</label>
+                <input type="time" id="resTime" class="form-control" value="19:30" required>
+              </div>
+
+              <div class="form-group">
+                <label for="resOccasion" class="form-label">Occasion (Optional)</label>
+                <select id="resOccasion" class="form-control">
+                  <option value="Casual Dining">Casual Dining</option>
+                  <option value="Birthday Celebration">Birthday Celebration</option>
+                  <option value="Anniversary Dinner">Anniversary Dinner</option>
+                  <option value="Family Gathering">Family Gathering</option>
+                  <option value="Business Meal">Business Meal</option>
+                </select>
+              </div>
+
+              <div class="form-group full-width">
+                <label for="resNotes" class="form-label">Special Requests / Notes</label>
+                <input type="text" id="resNotes" class="form-control" placeholder="e.g. Corner table, high chair for kid, Jain food preference...">
+              </div>
+
+              <div class="form-group full-width" style="margin-top: 0.5rem;">
+                <button type="submit" class="btn btn-primary" style="width: 100%;">
+                  Confirm Table Reservation on WhatsApp
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-panel reveal">
+            <div class="contact-info-list">
+              <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">📍</div>
+                <div>
+                  <div class="contact-label">Restaurant Address</div>
+                  <div class="contact-value">Shop 12, Green Avenue, Adajan, Surat, Gujarat</div>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">📞</div>
+                <div>
+                  <div class="contact-label">Phone &amp; WhatsApp</div>
+                  <div class="contact-value">
+                    <a href="tel:+919824160664">+91 98241 60664</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">✉️</div>
+                <div>
+                  <div class="contact-label">Email Address</div>
+                  <div class="contact-value">
+                    <a href="mailto:havytechnologies@gmail.com">havytechnologies@gmail.com</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-actions">
+              <a href="tel:+919824160664" class="btn btn-primary">Call Now</a>
+              <button type="button" class="btn btn-outline js-whatsapp-general">WhatsApp</button>
+              <a href="mailto:havytechnologies@gmail.com?subject=Inquiry%20for%20The%20Urban%20Spice" class="btn btn-outline">Email Us</a>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=The+Urban+Spice+Shop+12+Green+Avenue+Adajan+Surat+Gujarat"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary"
+              >
+                Google Maps
+              </a>
+            </div>
+          </div>
+
+          <div class="map-card reveal">
+            <div>
+              <span class="section-subtitle" style="padding-left:0; color: var(--gold);">Dining Hours</span>
+              <h3 class="section-title" style="font-size: 2rem; color: var(--cream);">Opening Schedule</h3>
+              <p style="color: var(--text-muted); font-size: 0.92rem;">
+                We welcome guests for lunch, evening street-food cravings, and relaxed family dinners six days a week.
+              </p>
+
+              <div class="hours-box">
+                <div class="hours-row">
+                  <span>Tuesday – Sunday</span>
+                  <strong>11:00 AM – 11:00 PM</strong>
+                </div>
+                <div class="hours-row">
+                  <span>Weekly Off</span>
+                  <span class="hours-closed">Monday Closed</span>
+                </div>
+              </div>
+            </div>
+
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Shop+12+Green+Avenue+Adajan+Surat+Gujarat"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+              style="width: 100%;"
+            >
+              Get Directions on Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 10. FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="#hero" class="brand-logo">
+            <span class="brand-name">THE URBAN SPICE</span>
+            <span class="brand-tagline">Every Bite Tells a Story</span>
+          </a>
+          <p>
+            Established in 2019 in Adajan, Surat. Offering authentic Indian flavours, delicious street food, and modern multi-cuisine dining crafted with fresh ingredients and warm hospitality.
+          </p>
+          <div class="social-links" aria-label="Social Media Links">
+            <a href="https://wa.me/919824160664" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+              </svg>
+            </a>
+            <a href="tel:+919824160664" class="social-link" aria-label="Call The Urban Spice">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+            </a>
+            <a href="mailto:havytechnologies@gmail.com" class="social-link" aria-label="Email The Urban Spice">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Shop+12+Green+Avenue+Adajan+Surat+Gujarat" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Google Maps Location">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#highlights">Special Highlights</a></li>
+            <li><a href="#menu">Food Menu</a></li>
+            <li><a href="#bestsellers">Bestsellers</a></li>
+            <li><a href="#gallery">Restaurant Gallery</a></li>
+            <li><a href="#reserveTable">Reserve a Table</a></li>
+            <li><a href="#contact">Contact &amp; Location</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Contact Details</h3>
+          <ul class="footer-contact-list">
+            <li><strong>Address:</strong> Shop 12, Green Avenue, Adajan, Surat, Gujarat</li>
+            <li><strong>Phone:</strong> <a href="tel:+919824160664">+91 98241 60664</a></li>
+            <li><strong>WhatsApp:</strong> <a href="https://wa.me/919824160664" target="_blank" rel="noopener noreferrer">+91 98241 60664</a></li>
+            <li><strong>Email:</strong> <a href="mailto:havytechnologies@gmail.com">havytechnologies@gmail.com</a></li>
+            <li><strong>Hours:</strong> 11:00 AM – 11:00 PM (Mon Closed)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear">2026</span> The Urban Spice. All Rights Reserved.</p>
+        <p class="team-credit">Crafted with ❤ By Team Havy</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <button type="button" class="whatsapp-float js-whatsapp-general" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.126.556 4.124 1.533 5.854l-1.533 5.646 5.792-1.519c1.693.896 3.619 1.409 5.667 1.409 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/>
+    </svg>
+    <span>Chat on WhatsApp</span>
+  </button>
+
+  <!-- FLOATING CART PILL -->
+  <button type="button" class="floating-cart-pill js-open-cart" id="floatingCartPill" aria-label="View Cart and Checkout">
+    <span>🛒 View Cart (<span class="js-cart-count">0</span>)</span>
+  </button>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button type="button" class="back-to-top" id="backToTop" aria-label="Back to top">
+    &#8593;
+  </button>
+
+  <!-- CART & CHECKOUT DRAWER -->
+  <div class="cart-backdrop" id="cartBackdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping Cart and Checkout">
+    <div class="cart-drawer-header">
+      <h3 class="cart-drawer-title">Your Order Cart</h3>
+      <button type="button" class="cart-close-btn" id="cartCloseBtn" aria-label="Close Cart">&times;</button>
+    </div>
+
+    <div class="cart-drawer-body">
+      <div class="cart-empty-state" id="cartEmptyState">
+        <p>Your cart is currently empty. Add delicious dishes from our menu to place an order!</p>
+        <a href="#menu" class="btn btn-outline btn-sm" id="browseMenuBtn">Browse Menu</a>
+      </div>
+
+      <div id="cartFilledContent" style="display: none;">
+        <div class="cart-items-list" id="cartItemsList"></div>
+
+        <!-- Customer Details Form for Checkout -->
+        <div class="checkout-section">
+          <h4 class="checkout-section-title">Delivery / Order Details</h4>
+          <form id="cartCheckoutForm" class="checkout-form-fields">
+            <div class="form-group">
+              <label for="custName" class="form-label">Your Name *</label>
+              <input type="text" id="custName" class="form-control" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+              <label for="custPhone" class="form-label">Mobile Number *</label>
+              <input type="tel" id="custPhone" class="form-control" placeholder="Enter 10-digit mobile number" required>
+            </div>
+            <div class="form-group">
+              <label for="custAddress" class="form-label">Full Delivery Address *</label>
+              <textarea id="custAddress" rows="3" class="form-control" placeholder="House/Flat No., Society, Landmark, Area in Surat" required></textarea>
+            </div>
+            <div class="form-group">
+              <label for="custNotes" class="form-label">Cooking Instructions (Optional)</label>
+              <input type="text" id="custNotes" class="form-control" placeholder="e.g. Less spicy, Jain preparation, extra cutlery...">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="cart-drawer-footer" id="cartDrawerFooter" style="display: none;">
+      <div class="cart-total-row">
+        <span>Total Amount</span>
+        <span class="cart-total-amount" id="cartTotalAmount">₹0</span>
+      </div>
+      <button type="submit" form="cartCheckoutForm" class="btn btn-primary" style="width: 100%;">
+        Proceed to WhatsApp Checkout
+      </button>
+    </div>
+  </aside>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast-notification" id="toastNotification" role="status" aria-live="polite"></div>
+
+  <script>
+    (function () {
+      'use strict';
+
+      const WHATSAPP_NUMBER = '919824160664';
+      const GENERAL_MESSAGE = 'Hello The Urban Spice! I would like to place an order. Please share the available options.';
+
+      // Set Default Minimum Date on Reservation Date Input
+      const resDateInput = document.getElementById('resDate');
+      if (resDateInput) {
+        const today = new Date().toISOString().split('T')[0];
+        resDateInput.setAttribute('min', today);
+        resDateInput.value = today;
+      }
+
+      // Dynamic Footer Year
+      const yearSpan = document.getElementById('currentYear');
+      if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+      }
+
+      // Toast Helper
+      const toastEl = document.getElementById('toastNotification');
+      let toastTimeout = null;
+      function showToast(msg) {
+        if (!toastEl) return;
+        toastEl.textContent = msg;
+        toastEl.classList.add('show');
+        clearTimeout(toastTimeout);
+        toastTimeout = setTimeout(function () {
+          toastEl.classList.remove('show');
+        }, 2600);
+      }
+
+      // 1. Sticky Navbar & Back to Top Visibility
+      const navbar = document.getElementById('navbar');
+      const backToTopBtn = document.getElementById('backToTop');
+
+      function handleScroll() {
+        const scrollY = window.scrollY || window.pageYOffset;
+        if (scrollY > 60) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+
+        if (scrollY > 500) {
+          backToTopBtn.classList.add('show');
+        } else {
+          backToTopBtn.classList.remove('show');
+        }
+      }
+
+      window.addEventListener('scroll', handleScroll, { passive: true });
+      handleScroll();
+
+      backToTopBtn.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      // 2. Mobile Hamburger Navigation
+      const hamburgerBtn = document.getElementById('hamburgerBtn');
+      const navLinks = document.getElementById('navLinks');
+      const navItems = document.querySelectorAll('.nav-item');
+
+      function toggleMobileMenu() {
+        const isOpen = navLinks.classList.toggle('open');
+        hamburgerBtn.classList.toggle('active', isOpen);
+        hamburgerBtn.setAttribute('aria-expanded', String(isOpen));
+      }
+
+      function closeMobileMenu() {
+        navLinks.classList.remove('open');
+        hamburgerBtn.classList.remove('active');
+        hamburgerBtn.setAttribute('aria-expanded', 'false');
+      }
+
+      hamburgerBtn.addEventListener('click', toggleMobileMenu);
+      navItems.forEach(function (link) {
+        link.addEventListener('click', closeMobileMenu);
+      });
+
+      // 3. WhatsApp URL Helper
+      function openWhatsApp(messageText) {
+        const encoded = encodeURIComponent(messageText);
+        const url = 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encoded;
+        window.open(url, '_blank', 'noopener,noreferrer');
+      }
+
+      // General Order Buttons & Floating WhatsApp Button
+      const generalWaButtons = document.querySelectorAll('.js-whatsapp-general');
+      generalWaButtons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          openWhatsApp(GENERAL_MESSAGE);
+        });
+      });
+
+      // Direct Single-Item Order Buttons
+      const itemOrderButtons = document.querySelectorAll('.js-order-item');
+      itemOrderButtons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          const itemName = btn.getAttribute('data-name');
+          const itemPrice = btn.getAttribute('data-price');
+          const message = 'Hello! I would like to order ' + itemName + ' priced at ₹' + itemPrice + '.';
+          openWhatsApp(message);
+        });
+      });
+
+      // 4. Shopping Cart & WhatsApp Checkout System
+      let cart = [];
+
+      const cartBackdrop = document.getElementById('cartBackdrop');
+      const cartDrawer = document.getElementById('cartDrawer');
+      const cartCloseBtn = document.getElementById('cartCloseBtn');
+      const browseMenuBtn = document.getElementById('browseMenuBtn');
+      const openCartButtons = document.querySelectorAll('.js-open-cart');
+      const cartCountBadges = document.querySelectorAll('.js-cart-count');
+      const floatingCartPill = document.getElementById('floatingCartPill');
+      const cartEmptyState = document.getElementById('cartEmptyState');
+      const cartFilledContent = document.getElementById('cartFilledContent');
+      const cartDrawerFooter = document.getElementById('cartDrawerFooter');
+      const cartItemsList = document.getElementById('cartItemsList');
+      const cartTotalAmount = document.getElementById('cartTotalAmount');
+      const cartCheckoutForm = document.getElementById('cartCheckoutForm');
+
+      function openCartDrawer() {
+        cartBackdrop.classList.add('open');
+        cartDrawer.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeCartDrawer() {
+        cartBackdrop.classList.remove('open');
+        cartDrawer.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+
+      openCartButtons.forEach(function (btn) {
+        btn.addEventListener('click', openCartDrawer);
+      });
+      cartCloseBtn.addEventListener('click', closeCartDrawer);
+      cartBackdrop.addEventListener('click', closeCartDrawer);
+      browseMenuBtn.addEventListener('click', closeCartDrawer);
+
+      function addToCart(name, price) {
+        const numericPrice = Number(price);
+        const existingItem = cart.find(function (item) {
+          return item.name === name;
+        });
+
+        if (existingItem) {
+          existingItem.qty += 1;
+        } else {
+          cart.push({ name: name, price: numericPrice, qty: 1 });
+        }
+
+        renderCart();
+        showToast(name + ' added to cart!');
+      }
+
+      function updateCartQty(name, delta) {
+        const idx = cart.findIndex(function (item) {
+          return item.name === name;
+        });
+        if (idx === -1) return;
+
+        cart[idx].qty += delta;
+        if (cart[idx].qty <= 0) {
+          cart.splice(idx, 1);
+        }
+        renderCart();
+      }
+
+      function removeCartItem(name) {
+        cart = cart.filter(function (item) {
+          return item.name !== name;
+        });
+        renderCart();
+      }
+
+      function renderCart() {
+        const totalQty = cart.reduce(function (sum, item) {
+          return sum + item.qty;
+        }, 0);
+
+        const totalPrice = cart.reduce(function (sum, item) {
+          return sum + item.price * item.qty;
+        }, 0);
+
+        cartCountBadges.forEach(function (badge) {
+          badge.textContent = String(totalQty);
+        });
+
+        if (totalQty > 0) {
+          floatingCartPill.classList.add('has-items');
+          cartEmptyState.style.display = 'none';
+          cartFilledContent.style.display = 'block';
+          cartDrawerFooter.style.display = 'block';
+        } else {
+          floatingCartPill.classList.remove('has-items');
+          cartEmptyState.style.display = 'block';
+          cartFilledContent.style.display = 'none';
+          cartDrawerFooter.style.display = 'none';
+        }
+
+        cartItemsList.innerHTML = '';
+        cart.forEach(function (item) {
+          const row = document.createElement('div');
+          row.className = 'cart-item-row';
+
+          const infoDiv = document.createElement('div');
+          infoDiv.className = 'cart-item-info';
+          const titleEl = document.createElement('h4');
+          titleEl.textContent = item.name;
+          const subEl = document.createElement('span');
+          subEl.textContent = '₹' + item.price + ' × ' + item.qty + ' = ₹' + (item.price * item.qty);
+          infoDiv.appendChild(titleEl);
+          infoDiv.appendChild(subEl);
+
+          const controlsDiv = document.createElement('div');
+          controlsDiv.className = 'cart-qty-controls';
+
+          const minusBtn = document.createElement('button');
+          minusBtn.type = 'button';
+          minusBtn.className = 'qty-btn';
+          minusBtn.textContent = '−';
+          minusBtn.addEventListener('click', function () {
+            updateCartQty(item.name, -1);
+          });
+
+          const countSpan = document.createElement('span');
+          countSpan.className = 'qty-count';
+          countSpan.textContent = String(item.qty);
+
+          const plusBtn = document.createElement('button');
+          plusBtn.type = 'button';
+          plusBtn.className = 'qty-btn';
+          plusBtn.textContent = '+';
+          plusBtn.addEventListener('click', function () {
+            updateCartQty(item.name, 1);
+          });
+
+          const removeBtn = document.createElement('button');
+          removeBtn.type = 'button';
+          removeBtn.className = 'remove-item-btn';
+          removeBtn.textContent = 'Remove';
+          removeBtn.addEventListener('click', function () {
+            removeCartItem(item.name);
+          });
+
+          controlsDiv.appendChild(minusBtn);
+          controlsDiv.appendChild(countSpan);
+          controlsDiv.appendChild(plusBtn);
+          controlsDiv.appendChild(removeBtn);
+
+          row.appendChild(infoDiv);
+          row.appendChild(controlsDiv);
+          cartItemsList.appendChild(row);
+        });
+
+        cartTotalAmount.textContent = '₹' + totalPrice;
+      }
+
+      // Bind Add to Cart Buttons
+      const addToCartButtons = document.querySelectorAll('.js-add-to-cart');
+      addToCartButtons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          const itemName = btn.getAttribute('data-name');
+          const itemPrice = btn.getAttribute('data-price');
+          addToCart(itemName, itemPrice);
+        });
+      });
+
+      // Handle Cart Checkout Form Submission -> Redirect to WhatsApp
+      cartCheckoutForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        if (cart.length === 0) return;
+
+        const name = document.getElementById('custName').value.trim();
+        const phone = document.getElementById('custPhone').value.trim();
+        const address = document.getElementById('custAddress').value.trim();
+        const notes = document.getElementById('custNotes').value.trim();
+
+        const totalAmount = cart.reduce(function (sum, item) {
+          return sum + item.price * item.qty;
+        }, 0);
+
+        const orderLines = cart.map(function (item, index) {
+          return (index + 1) + '. ' + item.name + ' (Qty: ' + item.qty + ') - ₹' + (item.price * item.qty);
+        });
+
+        let message = '*New Food Order — The Urban Spice*\n\n';
+        message += '*Order Items:*\n' + orderLines.join('\n') + '\n\n';
+        message += '*Total Payable:* ₹' + totalAmount + '\n\n';
+        message += '*Customer Details:*\n';
+        message += 'Name: ' + name + '\n';
+        message += 'Mobile: ' + phone + '\n';
+        message += 'Address: ' + address;
+        if (notes) {
+          message += '\nCooking Notes: ' + notes;
+        }
+
+        openWhatsApp(message);
+      });
+
+      // 5. Table Reservation Form Submission -> Redirect to WhatsApp
+      const reservationForm = document.getElementById('reservationForm');
+      reservationForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const name = document.getElementById('resName').value.trim();
+        const phone = document.getElementById('resPhone').value.trim();
+        const guests = document.getElementById('resGuests').value;
+        const date = document.getElementById('resDate').value;
+        const time = document.getElementById('resTime').value;
+        const occasion = document.getElementById('resOccasion').value;
+        const notes = document.getElementById('resNotes').value.trim();
+
+        let message = '*Table Reservation Request — The Urban Spice*\n\n';
+        message += '*Guest Name:* ' + name + '\n';
+        message += '*Mobile Number:* ' + phone + '\n';
+        message += '*Number of Guests:* ' + guests + '\n';
+        message += '*Date:* ' + date + '\n';
+        message += '*Preferred Time:* ' + time + '\n';
+        message += '*Occasion:* ' + occasion;
+        if (notes) {
+          message += '\n*Special Request:* ' + notes;
+        }
+        message += '\n\nPlease confirm our table reservation.';
+
+        openWhatsApp(message);
+      });
+
+      // 6. Menu Category Filtering
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const menuCards = document.querySelectorAll('.menu-card');
+
+      filterButtons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          const selectedCategory = btn.getAttribute('data-filter');
+
+          filterButtons.forEach(function (b) {
+            b.classList.remove('active');
+          });
+          btn.classList.add('active');
+
+          menuCards.forEach(function (card) {
+            const cardCategory = card.getAttribute('data-category');
+            if (selectedCategory === 'all' || cardCategory === selectedCategory) {
+              card.classList.remove('hidden');
+            } else {
+              card.classList.add('hidden');
+            }
+          });
+        });
+      });
+
+      // 7. Gallery Lightbox
+      const galleryItems = Array.from(document.querySelectorAll('.gallery-item'));
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightboxImg');
+      const lightboxCaption = document.getElementById('lightboxCaption');
+      const lightboxClose = document.getElementById('lightboxClose');
+      const lightboxPrev = document.getElementById('lightboxPrev');
+      const lightboxNext = document.getElementById('lightboxNext');
+      let currentGalleryIndex = 0;
+
+      function showLightboxItem(index) {
+        if (index < 0) {
+          currentGalleryIndex = galleryItems.length - 1;
+        } else if (index >= galleryItems.length) {
+          currentGalleryIndex = 0;
+        } else {
+          currentGalleryIndex = index;
+        }
+        const item = galleryItems[currentGalleryIndex];
+        const src = item.getAttribute('data-src');
+        const caption = item.getAttribute('data-caption');
+        lightboxImg.src = src;
+        lightboxCaption.textContent = caption;
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeLightbox() {
+        lightbox.classList.remove('active');
+        lightboxImg.src = '';
+        document.body.style.overflow = '';
+      }
+
+      galleryItems.forEach(function (item, idx) {
+        item.addEventListener('click', function () {
+          showLightboxItem(idx);
+        });
+        item.addEventListener('keydown', function (e) {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            showLightboxItem(idx);
+          }
+        });
+      });
+
+      lightboxClose.addEventListener('click', closeLightbox);
+
+      lightboxPrev.addEventListener('click', function (e) {
+        e.stopPropagation();
+        showLightboxItem(currentGalleryIndex - 1);
+      });
+
+      lightboxNext.addEventListener('click', function (e) {
+        e.stopPropagation();
+        showLightboxItem(currentGalleryIndex + 1);
+      });
+
+      lightbox.addEventListener('click', function (e) {
+        if (e.target === lightbox) {
+          closeLightbox();
+        }
+      });
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && cartDrawer.classList.contains('open')) {
+          closeCartDrawer();
+          return;
+        }
+        if (!lightbox.classList.contains('active')) return;
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') showLightboxItem(currentGalleryIndex - 1);
+        if (e.key === 'ArrowRight') showLightboxItem(currentGalleryIndex + 1);
+      });
+
+      // 8. Scroll Reveal Animations via IntersectionObserver
+      const revealElements = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window) {
+        const revealObserver = new IntersectionObserver(
+          function (entries, observer) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.12 }
+        );
+
+        revealElements.forEach(function (el) {
+          revealObserver.observe(el);
+        });
+      } else {
+        revealElements.forEach(function (el) {
+          el.classList.add('visible');
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
